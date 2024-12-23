@@ -1,0 +1,19 @@
+/*---------------------- media query 1 --------------------*/
+
+@media (min-width: 100px) and (max-width: 767px)
+{
+    /* side menu */
+
+    .side-menu ul li img{
+        align-items: center !important;
+    }
+    .side-menu ul span{
+        display: none !important;
+    }
+    .side-menu .logout h3{
+        display: none !important;
+    }
+    .side-menu .logout a{
+        text-align: center !important;
+    }
+}

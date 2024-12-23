@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Statistical dashboard</title>
+    <title>Analytical Financial Data</title>
     <link rel="shortcut icon" href="./asset/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -35,17 +35,18 @@
 
     <!------------------------------ side menu end ---------------------------------------------->
 
-    <!------------------------------ header start ----------------------------------------------->
-
     <section class="container">
+
+        <!------------------------------ header start ----------------------------------------------->
+
         <div class="header bg-light shadow-lg bg-gradient">
             <div class="nav">
                 <form class="search-form" action="#">
-                    <input type="text" placeholder="Search here..." />
+                    <input class="border-primary" type="text" placeholder="Search here..." />
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="user d-flex justify-content-between align-items-center gap-4">
-                    <a href="#" class="btn btn-success">Add new</a>
+                    <a href="#" class="btn btn-primary">Add new</a>
                     <a href="#"><img src="./asset/notifications.png" alt="" style="height: 40px; width: 40px"></a>                    
                     <div class="img-case">
                         <a href=""><img src="./asset/user.png" alt="" style="height: 40px; width: 40px"></a>
@@ -53,6 +54,147 @@
                 </div>
             </div>
         </div>
+
+        <!------------------------------ header end ----------------------------------------------->
+
+        <!-------------------------------- main start ------------------------------------------------>
+
+            <!-- content 1 start -->
+
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-body gap-2 d-flex justify-content-center align-items-center shadow-lg">
+                        <div class="text-center">
+                            <h3 style="color: lightslategray;">25000</h3>
+                            <h4 style="color: lightslategray;">Total Students</h4>
+                        </div>
+                        <div class="icon-case">
+                            <img src="./asset/students.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body gap-2  d-flex justify-content-center align-items-center shadow-lg">
+                        <div class="text-center">
+                            <h3 style="color: lightslategray;">100</h3>
+                            <h4 style="color: lightslategray;">Total Teachers</h4>
+                        </div>
+                        <div class="icon-case">
+                            <img src="./asset/teachers.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body gap-2  d-flex justify-content-center align-items-center shadow-lg">
+                        <div class="text-center">
+                            <h3 style="color: lightslategray;">10</h3>
+                            <h4 style="color: lightslategray;">Total Schools</h4>
+                        </div>
+                        <div class="icon-case">
+                            <img src="./asset/schools.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body gap-2  d-flex justify-content-center align-items-center shadow-lg">
+                        <div class="text-center">
+                            <h3 style="color: lightslategray;">2500000</h3>
+                            <h4 style="color: lightslategray;">Total Income</h4>
+                        </div>
+                        <div class="icon-case">
+                            <img src="./asset/income.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content 1 end -->
+
+            <!-- content 2 start -->
+
+            <div class="cards gap-5">
+                <div class="recent-payments shadow-lg">
+                    <div class="title">
+                        <h2>Recent Payments</h2>
+                        <button class="btn btn-primary">View All</button>
+                    </div>
+                    <table class="flex-column align-items-center justify-content-between text-center w-100">
+                        <tr class="py-3">
+                            <th>Name</th>
+                            <th>School</th>
+                            <th>Amount</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. Mary High School</td>
+                            <td>$120</td>
+                            <td><a class="btn btn-primary" href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. Mary High School</td>
+                            <td>$120</td>
+                            <td><a class="btn btn-primary" href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. Mary High School</td>
+                            <td>$120</td>
+                            <td><a class="btn btn-primary" href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. Mary High School</td>
+                            <td>$120</td>
+                            <td><a class="btn btn-primary" href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. Mary High School</td>
+                            <td>$120</td>
+                            <td><a class="btn btn-primary" href="#">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. Mary High School</td>
+                            <td>$120</td>
+                            <td><a class="btn btn-primary" href="#">View</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="new-students shadow-lg">
+                    <div class="title pb-2">
+                        <h4>New Students</h4>
+                        <button class="btn btn-primary">View All</button>
+                    </div>
+                    <table class="flex-column align-items-center justify-content-between text-center w-100  h-100">
+                        <tr>
+                            <th>Profile</th>
+                            <th>Name</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td><img src="./asset/user.png" style="width: 30px; height: 30px;" alt=""></td>
+                            <td>Howe Stuart</td>
+                            <td><a href="#"><img src="./asset/info.png" alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./asset/user.png" style="width: 30px; height: 30px;" alt=""></td>
+                            <td>John Doe</td>
+                            <td><a href="#"><img src="./asset/info.png" alt=""></a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./asset/user.png" style="width: 30px; height: 30px;" alt=""></td>
+                            <td>Marry Bella</td>
+                            <td><a href="#"><img src="./asset/info.png" alt=""></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- content 2 end ---->
+        </div>        
     </section>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>

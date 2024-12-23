@@ -1,4 +1,4 @@
-/* global styles */
+/*-------------------- global styles -----------------*/
 
 *{
     font-family: 'popins', 'sans-serif';
@@ -18,10 +18,29 @@ li{
     width: 80vw;
     height: 100vh;
 }
+.content{
+    position: relative;
+    margin-top: 10vh;
+    height: 90vh;
+    overflow-y: scroll;
+}
+.cards{
+    padding: 40px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+}
+table tr:hover{
+    background-color: lightskyblue;
+    cursor: pointer;
+}
+th, td{
+    padding: 8px;
+}
+/*---------------------- global styles  ---------------*/
 
-/* global styles  */
-
-/* side menu */
+/*------------------------ side menu ------------------*/
 
 .side-menu{
     position: fixed;
@@ -50,15 +69,16 @@ li{
     padding-bottom: 10%;
 }
 
-/* side menu */
+/*------------------------- side menu -----------------*/
 
-/*- header -*/
+/*----------------------- header ----------------------*/
 
 .header{
     position: fixed;
     right: 0;
     width: 80vw;
     height: 10vh;
+    margin-bottom: 10vh;
 }
 .nav{
     width: 100%;
@@ -91,3 +111,57 @@ li{
     font-size: 16px;
     color: #666;
 }
+
+/*------------------ header ---------------------------*/
+
+/*--------------------- main content ------------------*/
+
+/* content 1 start ---*/
+
+.card{
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+    border: none;
+    border-radius: 9px;
+}
+.card-body:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: lightskyblue;
+}
+
+/* content 1 end ----*/
+
+/* content 2 start */
+
+.recent-payments{
+    flex: 5;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 9px;
+    height: 450px;
+    
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: #333 solid 1px;
+}
+.new-students{
+    flex: 2;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 9px;
+    height: 450px;
+}
+
+/* content 2 end */
